@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buchung | Landhaus Seedorf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Landhaus Seedorf</a>
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="booking.html">Buchen</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container card">
+    <h1>Buchungsanfrage</h1>
+    <p>Fülle das Formular aus — wir melden uns innerhalb von 24 Stunden.</p>
+
+    <form id="bookingForm" class="form">
+      <label>Vor- und Nachname
+        <input type="text" name="name" required>
+      </label>
+
+      <label>E‑Mail
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Telefon
+        <input type="tel" name="phone">
+      </label>
+
+      <label>Check‑in
+        <input type="date" name="checkin" required>
+      </label>
+
+      <label>Check‑out
+        <input type="date" name="checkout" required>
+      </label>
+
+      <label>Gäste
+        <input type="number" name="guests" min="1" max="10" value="2" required>
+      </label>
+
+      <label>Unterkunft
+        <select name="accommodation">
+          <option>Komfortzimmer</option>
+          <option>Familienzimmer</option>
+          <option>Ganzes Haus</option>
+        </select>
+      </label>
+
+      <label>Nachricht / Wünsche
+        <textarea name="message" rows="4"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Anfrage senden</button>
+        <a class="btn secondary" href="index.html">Abbrechen</a>
+      </div>
+    </form>
+
+    <div id="bookingResult" class="card hidden"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Landhaus Seedorf</strong><br>
+        Dorfstraße 12, 24306 Seedorf
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

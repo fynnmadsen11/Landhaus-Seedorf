@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt | Landhaus Seedorf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Landhaus Seedorf</a>
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="booking.html">Buchen</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container card">
+    <h1>Kontakt</h1>
+    <p>Fragen? Schreiben Sie uns oder rufen Sie an.</p>
+
+    <form id="contactForm" class="form">
+      <label>Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>E‑Mail
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Betreff
+        <input type="text" name="subject">
+      </label>
+
+      <label>Nachricht
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Nachricht senden</button>
+        <a class="btn secondary" href="index.html">Zurück</a>
+      </div>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Telefon:</strong> +49 170 1234567</p>
+      <p><strong>E‑Mail:</strong> <a href="mailto:info@landhaus-seedorf.de">info@landhaus-seedorf.de</a></p>
+      <p><strong>Adresse:</strong> Dorfstraße 12, 24306 Seedorf</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Landhaus Seedorf</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
